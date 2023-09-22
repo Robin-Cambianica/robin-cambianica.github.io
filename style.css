@@ -1,14 +1,17 @@
 body{
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #111111;
-    color: #eeeeee;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #111111;
+  color: #eeeeee;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 h1{
@@ -20,3 +23,105 @@ p{
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
 }
+
+
+
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title
+{
+     color: white;
+     font-size: 3.5em;
+     text-align: center;
+     position: relative;
+}
+
+.point
+{
+    animation-duration: 1s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+  }
+
+  .bar {
+    /* font-size: 10px */
+    width:  30em;
+    height: 1.2rem;
+    border-radius: 0.5em;
+    position: relative;
+    background: #f2f2f2;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
+  }
+
+
+  .bar .percentage {
+    position: relative;
+    font-size: 1em;
+    /* background: red;  */
+    background: linear-gradient(to right, red, orange, green);
+    background-size: 30em;
+    height: 1.2em;
+    border: 1px solid white;
+    border-radius: 2rem;
+  }
+
+
+.has-tip:before,
+.has-tip:after 
+    {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    }
+
+.has-tip:before 
+{
+    bottom: -11px;
+    right: -6px;
+    border: 6px solid;
+    border-color: transparent transparent rgb(204, 10, 10) transparent;
+    transition: opacity 0.1s;
+}
+
+.has-tip:after 
+{
+    content: attr(data-perc);
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+    padding: 0.6em 1em;
+    border-radius: 2em;
+    line-height: 1;
+    color: #fff;
+    background: rgb(204, 10, 10);
+    transform: translateX(50%) translateY(100%);
+    transition: transform 0.2s, opacity 0.1s;
+  }
+
+
+  .has-tip:hover:before,
+  .has-tip.active:before {
+    opacity: 1;
+  }
+
+  .has-tip:after,
+  .has-tip.active:after {
+    opacity: 1;
+    transform: translateX(50%) translateY(100%) translateY(10px);
+  }
