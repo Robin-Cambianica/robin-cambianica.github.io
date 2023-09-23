@@ -1,0 +1,168 @@
+:root {
+    font-size: 10px;
+}
+
+#container {
+    background-color: #111111;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eeeeee;
+    min-height: 100vh;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 0.3rem;
+}
+
+nav li img {
+    border-radius: 50%;
+    height: 3rem;
+}
+
+footer {
+    font-size: 0.8rem;
+}
+
+.progressBar {
+    width:  350px;
+    height: 1.2rem;
+    border-radius: 0.5em;
+    position: relative;
+    background: #555555;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    box-shadow: 10px 0px 20px 5px rgba(0,128,0,0.5), -10px 0px 20px 5px rgba(255,0,0,0.5);
+  }
+
+
+  .progressBar .percentage {
+    position: relative;
+    font-size: 1em;
+    background: linear-gradient(to right, red, orange, green);
+    background-size: 350px;
+    height: 1.2em;
+    border: 1px solid white;
+    border-right-style: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+
+.has-tip:before,
+.has-tip:after {
+    content: "";
+    position: absolute;
+    opacity: 1;
+}
+
+.has-tip:before {
+    bottom: -11px;
+    right: -6px;
+    border: 6px solid;
+    border-color: transparent transparent rgb(204, 10, 10) transparent;
+    /* transition: opacity 0.1s; */
+}
+
+.has-tip:after {
+    content: attr(data-perc);
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+    padding: 0.6em 1em;
+    border-radius: 2em;
+    line-height: 1rem;
+    color: #fff;
+    background: rgb(204, 10, 9);
+    font-size: 0.8rem;
+}
+
+  .has-tip:after {
+    transform: translateX(50%) translateY(100%) translateY(10px);
+}
+
+.clignote {
+    animation-duration: 2s;
+    animation-name: clignote;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+
+@keyframes clignote {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+}
+
+.backgroundRS {
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.backgroundRS:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 600px) {
+    :root{
+        font-size: 14px;
+    }
+
+    .progressBar {
+        width:  500px;
+    }
+
+    .progressBar .percentage {
+        background-size: 500px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    :root{
+        font-size: 16px;
+    }
+
+    .progressBar {
+        width:  600px;
+    }
+
+    .progressBar .percentage {
+        background-size: 600px;
+    }
+}
