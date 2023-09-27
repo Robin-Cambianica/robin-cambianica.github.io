@@ -1,5 +1,5 @@
 :root {
-    --percentageDotColor: rgb(255,32,0);
+    --percentageDotColor: rgb(255,34,0);
     font-size: 10px;
 }
 
@@ -17,6 +17,12 @@
 
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -26,12 +32,6 @@ h1 {
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h3 {
@@ -46,6 +46,15 @@ nav {
     width: 50%;
     margin: auto;
 
+}
+
+a {
+    color: rgb(255,144,0);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(255,48,0);
 }
 
 nav li {
@@ -67,7 +76,7 @@ footer {
     height: 1.2rem;
     border-radius: 0.5em;
     position: relative;
-    background: #555555;
+    background: rgba(255, 255, 255, 0.1);
     margin-top: 2rem;
     margin-bottom: 5rem;
     box-shadow: 10px 0px 10px 1px rgba(0,128,0,0.5), -10px 0px 10px 1px rgba(255,0,0,0.5);
@@ -110,7 +119,8 @@ footer {
     padding: 0.6em 1em;
     border-radius: 2em;
     line-height: 1rem;
-    color: #fff;
+    color: #ffffff;
+    text-shadow: #111111 1px 1px 3px;
     background: var(--percentageDotColor);
     font-size: 0.9rem;
 }
@@ -152,6 +162,10 @@ footer {
     .progressBar .percentage {
         background-size: 500px;
     }
+
+    .has-tip:after{
+        text-shadow: #111111 1px 2px 4px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -166,4 +180,9 @@ footer {
     .progressBar .percentage {
         background-size: 600px;
     }
+
+    .has-tip:after{
+        text-shadow: #111111 1px 2px 5px;
+    }
+
 }
