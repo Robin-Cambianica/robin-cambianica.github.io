@@ -1,5 +1,5 @@
 :root {
-    --percentageDotColor: rgb(255,34,0);
+    --percentageDotColor: rgba(255,37,0,0.8);
     font-size: 10px;
 }
 
@@ -100,7 +100,6 @@ footer {
 .has-tip:after {
     content: "";
     position: absolute;
-    opacity: 1;
 }
 
 .has-tip:before {
