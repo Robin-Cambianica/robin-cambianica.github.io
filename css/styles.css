@@ -196,23 +196,27 @@ footer {
 }
 
 .s02 {
-    background-color: rgba(101, 135, 189,0.8);
+    background-color: rgba(101, 135, 189, 0.8);
 }
 
 .s02:hover {
-    background-color: rgba(101, 135, 189,0.6);
+    background-color: rgba(101, 135, 189, 0.6);
 }
 
 .s03 {
-    background-color: rgba(231, 200, 45,0.8);
+    background-color: rgba(231, 200, 45, 0.8);
 }
 
 .s03:hover {
-    background-color: rgba(231, 200, 45,0.6);
+    background-color: rgba(231, 200, 45, 0.6);
 }
 
 .s04 {
-    background-color: #333333;
+    background-color: rgba(220, 223, 224, 0.8);
+}
+
+.s04:hover {
+    background-color: rgba(220, 223, 224, 0.6);
 }
 
 .s05 {
