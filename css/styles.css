@@ -1,5 +1,5 @@
 :root {
-    --percentageDotColor: rgba(251, 77, 2,0.9);
+    --percentageDotColor: rgba(255, 91, 33,0.9);
     font-size: 10px;
 }
 
@@ -187,28 +187,36 @@ footer {
     background-color: rgb(255, 255, 255);
 }
 
-.s01 {
+.html-css {
     background: linear-gradient(90deg, rgba(231,84,49,0.8) 10%, rgba(47,82,222,0.8) 90%);
 }
 
-.s01:hover {
+.html-css:hover {
     background: linear-gradient(90deg, rgba(231,84,49,0.6) 10%, rgba(47,82,222,0.6) 90%);
 }
 
-.s02 {
+.php {
     background-color: rgba(101, 135, 189, 0.8);
 }
 
-.s02:hover {
+.php:hover {
     background-color: rgba(101, 135, 189, 0.6);
 }
 
-.s03 {
+.js {
     background-color: rgba(231, 200, 45, 0.8);
 }
 
-.s03:hover {
+.js:hover {
     background-color: rgba(231, 200, 45, 0.6);
+}
+
+.bootstrap {
+    background: linear-gradient(90deg, rgba(145,45,245,0.8) 0%, rgba(117,41,237,0.8) 100%);
+}
+
+.bootstrap:hover {
+    background: linear-gradient(90deg, rgba(145,45,245,0.6) 0%, rgba(117,41,237,0.6) 100%);
 }
 
 .s04 {
