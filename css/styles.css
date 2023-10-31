@@ -1,5 +1,5 @@
 :root {
-    --percentageDotColor: rgba(252, 97, 2,0.9);
+    --percentageDotColor: rgba(252, 101, 2,0.9);
     font-size: 10px;
 }
 
@@ -121,7 +121,7 @@ footer {
     margin-top: 2rem;
     margin-bottom: 5rem;
     box-shadow: 10px 0px 10px 1px rgba(0,128,0,0.5), -10px 0px 10px 1px rgba(255,0,0,0.5);
-  }
+}
 
 
 .progressBar .percentage {
@@ -236,14 +236,6 @@ footer {
     
 }
 
-.imgBlackShadow {
-    filter: drop-shadow(2px 2px 5px #000000);
-}
-
-.imgWhiteShadow {
-    filter: drop-shadow(2px 2px 5px #ffffff);
-}
-
 .sql:hover {
     background: rgba(230,144,43,0.6);
 }
@@ -275,6 +267,15 @@ footer {
 .horizontalImg {
     max-width: 70%;
 }
+
+.imgBlackShadow {
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+.imgWhiteShadow {
+    filter: drop-shadow(2px 2px 5px #ffffff);
+}
+
 
 @media screen and (min-width: 600px) {
     :root{
