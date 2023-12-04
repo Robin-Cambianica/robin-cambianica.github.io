@@ -1,5 +1,5 @@
 :root {
-    --percentageDotColor: rgba(253, 152, 0,0.9);
+    --percentageDotColor: rgba(253, 163, 0,0.9);
     font-size: 10px;
 }
 
@@ -264,6 +264,15 @@ footer {
 
 .laravel:hover {
     background: rgba(251, 45, 32, 0.6);
+}
+
+.api_rest {
+    background: rgba(255, 255, 255, 0.8)
+    
+}
+
+.api_rest:hover {
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .horizontalImg {
