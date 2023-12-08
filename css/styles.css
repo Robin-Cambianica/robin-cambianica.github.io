@@ -1,5 +1,5 @@
 :root {
-    --percentageDotColor: rgba(253, 165, 0,0.9);
+    --percentageDotColor: rgba(242, 164, 0,0.9);
     font-size: 10px;
 }
 
@@ -272,7 +272,16 @@ footer {
 }
 
 .api_rest:hover {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255,0.6);
+}
+
+.wp {
+    background: rgba(0, 116, 151, 0.8)
+    
+}
+
+.wp:hover {
+    background: rgba(0, 116, 151, 0.6);
 }
 
 .horizontalImg {
@@ -280,11 +289,11 @@ footer {
 }
 
 .imgBlackShadow {
-    filter: drop-shadow(2px 2px 5px #000000);
+    filter: drop-shadow(1px 1px 1px #000000);
 }
 
 .imgWhiteShadow {
-    filter: drop-shadow(2px 2px 5px #ffffff);
+    filter: drop-shadow(-1px -1px 1px #ffffff);
 }
 
 
