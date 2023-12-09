@@ -183,11 +183,11 @@ footer {
 }
 
 .backgroundRS {
-    background-color: rgb(255, 255, 255, 0.8);
+    border: rgba(255, 255, 255, 0.5) 2px solid;
 }
 
 .backgroundRS:hover {
-    background-color: rgb(255, 255, 255);
+    border: rgba(255, 255, 255, 1) 2px solid;
 }
 
 .html-css {
@@ -276,12 +276,12 @@ footer {
 }
 
 .wp {
-    background: rgba(0, 116, 151, 0.8)
+    background: rgba(0, 178, 212, 0.8)
     
 }
 
 .wp:hover {
-    background: rgba(0, 116, 151, 0.6);
+    background: rgba(0, 178, 212, 0.6);
 }
 
 .horizontalImg {
