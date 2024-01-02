@@ -284,6 +284,15 @@ footer {
     background: rgba(0, 178, 212, 0.6);
 }
 
+.react {
+    background: rgba(97, 218, 251, 0.8)
+    
+}
+
+.react:hover {
+    background: rgba(97, 218, 251, 0.6);
+}
+
 .horizontalImg {
     max-width: 70%;
 }
