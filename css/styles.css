@@ -1,5 +1,5 @@
 :root {
-    --percentageDotColor: rgba(121, 145, 38,0.9);
+    --percentageDotColor: rgba(76, 139, 0,0.9);
     font-size: 10px;
 }
 
@@ -315,6 +315,15 @@ footer {
 
 .redux:hover {
     background: rgba(121, 79, 183, 0.6);
+}
+
+.yarn {
+    background: rgba(51, 152, 194, 0.8)
+    
+}
+
+.yarn:hover {
+    background: rgba(51, 152, 194, 0.6);
 }
 
 .horizontalImg {
